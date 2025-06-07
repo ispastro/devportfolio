@@ -44,13 +44,13 @@ const Hero: React.FC = () => {
             href="#projects"
             className="px-6 py-3 bg-[#FFB347] hover:bg-[#FFA726] text-black font-semibold rounded-lg flex items-center gap-2 transition-all animate-glow"
           >
-            See My Backend Projects <ArrowRight size={18} />
+             Projects <ArrowRight size={18} />
           </a>
           <a
-            href="#"
+            href="/haile-asaye-cv.pdf"
             className="px-6 py-3 bg-transparent hover:bg-[#FF6B6B]/10 text-[#FF6B6B] border border-[#FF6B6B]/50 font-medium rounded-lg flex items-center gap-2 transition-all"
           >
-            Download Backend CV <Download size={18} />
+            Download  CV <Download size={18} />
           </a>
         </div>
 

@@ -29,7 +29,7 @@ const About: React.FC = () => {
           <p>
             I’m a{' '}
             <span className="font-semibold text-[#E5C07B]">
-              self-taught Full-Stack Developer
+              self-taught Backend Developer
             </span>{' '}
             with a formal background in{' '}
             <span className="text-[#61AFEF] font-medium">Information Systems</span>{' '}
