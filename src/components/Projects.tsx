@@ -51,7 +51,7 @@ const Projects: React.FC = () => {
     {
       id: 1,
       title: "novapad",
-      description: "A Laravel API-based job matching platform that connects service seekers with blue-collar workers using role-based access, job listings, and applications.",
+      description: "note taking app that helps users organize their thoughts and ideas.",
       techStack: ["Laravel", "MySQL", "REST API", "JWT Auth"],
       githubLink: "https://github.com/ispastro/novapad",
       image: "https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
@@ -63,7 +63,7 @@ const Projects: React.FC = () => {
       title: "HealthConsult",
       description: "A Laravel API-based health consultation platform that connects patients with healthcare professionals using role-based access, appointment scheduling, and video consultations.",
       techStack: ["Laravel", "MySQL", "REST API", "JWT Auth"],
-      githubLink: "https://github.com/ispastro/HealthConsultancy",
+      githubLink: "https://github.com/ispastro/Health_consultancy",
       image: "https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       learned: "Built scalable RESTful APIs, role middleware, and applied Laravel best practices for authentication and authorization."
     },
@@ -132,7 +132,7 @@ const Projects: React.FC = () => {
                     rel="noopener noreferrer"
                     className="flex items-center text-[#ABB2BF] hover:text-[#98C379] transition-colors"
                   >
-                   
+                   View on GitHub
                   </a>
 
                   {project.demoLink && (
@@ -142,9 +142,11 @@ const Projects: React.FC = () => {
                       rel="noopener noreferrer"
                       className="flex items-center text-[#ABB2BF] hover:text-[#98C379] transition-colors"
                     >
-                      
+                      view on github
                    
                     </a>
+
+                    
                   )}
                 </div>
               </div>

@@ -50,50 +50,9 @@ const Footer: React.FC = () => {
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#about" className="text-slate-400 hover:text-cyan-400 transition-colors">
-                  About Me
-                </a>
-              </li>
-              <li>
-                <a href="#skills" className="text-slate-400 hover:text-cyan-400 transition-colors">
-                  Skills
-                </a>
-              </li>
-              <li>
-                <a href="#projects" className="text-slate-400 hover:text-cyan-400 transition-colors">
-                  Projects
-                </a>
-              </li>
-              <li>
-                <a href="#blog" className="text-slate-400 hover:text-cyan-400 transition-colors">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a href="#contact" className="text-slate-400 hover:text-cyan-400 transition-colors">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
-            <p className="text-slate-400 mb-2">
-              Addis Ababa, Ethiopia
-            </p>
-            <a
-              href="mailto:haile@example.com"
-              className="text-slate-400 hover:text-cyan-400 transition-colors"
-            >
-              haile@example.com
-            </a>
+            {/* You can add more footer content here if needed */}
           </div>
         </div>
-        
         <div className="border-t border-slate-800 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-slate-500 text-sm mb-4 md:mb-0">
             &copy; {new Date().getFullYear()} Haile Asaye. All rights reserved.
