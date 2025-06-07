@@ -4,23 +4,24 @@ import { Typewriter } from 'react-simple-typewriter';
 
 const Hero: React.FC = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 bg-gradient-to-br from-[#1A1F2E] to-[#12151F] text-white relative overflow-hidden text-center">
-      <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+    <section className="min-h-screen flex items-center justify-center px-4 md:px-10 lg:px-20 bg-[#1E1E1E] text-[#ABB2BF] font-mono relative overflow-hidden text-center py-24">
+      <div className="absolute inset-0 bg-grid-pattern opacity-5 pointer-events-none"></div>
 
-      <div className="z-10 max-w-3xl space-y-6 py-20">
-        <div className="space-y-2 mb-6">
-          <p className="text-[#FFB347] font-medium animate-fadeIn">
-            <span className="inline-block animate-wave mr-2">👋</span>
-            <span className="typed-text">Hi there</span>
+      <div className="z-10 max-w-4xl w-full space-y-8">
+        {/* Greeting */}
+        <div className="space-y-3 mb-8">
+          <p className="text-[#E5C07B] font-medium text-lg animate-fadeIn">
+            <span className="inline-block animate-wave mr-2">👋</span> Hello there
           </p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-           i'm Haile Asaye
-          <span className="text-[#FFB347]">.</span>
+
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#61AFEF] drop-shadow-[0_0_6px_#61AFEF]">
+            I'm Haile Asaye<span className="text-[#C678DD]">.</span>
           </h1>
-          <h2 className="text-xl md:text-2xl text-[#94A3B8] mt-2">
+
+          <h2 className="text-xl md:text-2xl text-[#98C379] mt-2">
             <Typewriter
               words={['Backend Developer', 'Laravel API Architect']}
-              loop={true}
+              loop
               cursor
               cursorStyle="|"
               typeSpeed={80}
@@ -28,54 +29,60 @@ const Hero: React.FC = () => {
               delaySpeed={1500}
             />
           </h2>
-          <p className="text-lg md:text-xl text-[#FFB347] font-medium mt-3">
+
+          <p className="text-[#C678DD] text-lg font-medium">
             "Engineering Reliable Systems with Clean Logic."
           </p>
         </div>
 
-        <p className="text-[#CBD5E1] text-lg max-w-2xl mx-auto">
-          I'm deeply focused on backend development — building scalable, maintainable,
-          and secure systems with Laravel, REST APIs, and solid database design.
-          This portfolio showcases my backend learning journey and practical projects.
+        {/* Summary */}
+        <p className="text-[#ABB2BF] text-base md:text-lg max-w-2xl mx-auto">
+          I specialize in backend development—building scalable, secure, and maintainable systems
+          using Laravel, RESTful APIs, and well-architected databases. This portfolio showcases my technical growth and real-world projects.
         </p>
 
+        {/* Call to Actions */}
         <div className="flex justify-center flex-wrap gap-4 mt-8">
           <a
             href="#projects"
-            className="px-6 py-3 bg-[#FFB347] hover:bg-[#FFA726] text-black font-semibold rounded-lg flex items-center gap-2 transition-all animate-glow"
+            className="px-6 py-3 bg-[#C678DD] hover:bg-[#C678DD]/80 text-[#282C34] font-semibold rounded-xl shadow-md hover:shadow-[#C678DD]/30 transition-all flex items-center gap-2"
           >
-             Projects <ArrowRight size={18} />
+            Projects <ArrowRight size={18} />
           </a>
+
           <a
             href="/haile-asaye-cv.pdf"
-            className="px-6 py-3 bg-transparent hover:bg-[#FF6B6B]/10 text-[#FF6B6B] border border-[#FF6B6B]/50 font-medium rounded-lg flex items-center gap-2 transition-all"
+            className="px-6 py-3 border border-[#61AFEF]/40 text-[#61AFEF] hover:bg-[#61AFEF]/10 font-medium rounded-xl flex items-center gap-2 transition-all"
           >
-            Download  CV <Download size={18} />
+            Download CV <Download size={18} />
           </a>
         </div>
 
-        <div className="flex justify-center gap-4 mt-8">
+        {/* Social Icons */}
+        <div className="flex justify-center gap-6 mt-8 text-[#ABB2BF]">
           <a
             href="https://github.com/ispastro"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:text-[#FFB347] transition-colors"
-            aria-label="GitHub Profile"
+            className="hover:text-[#C678DD] transition-colors"
+            aria-label="GitHub"
           >
             <Github size={24} />
           </a>
+
           <a
             href="https://linkedin.com/in/haile-asaye21"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white hover:text-[#FFB347] transition-colors"
-            aria-label="LinkedIn Profile"
+            className="hover:text-[#C678DD] transition-colors"
+            aria-label="LinkedIn"
           >
             <Linkedin size={24} />
           </a>
+
           <a
             href="mailto:haileasaye51@gmail.com"
-            className="text-white hover:text-[#FFB347] transition-colors"
+            className="hover:text-[#C678DD] transition-colors"
             aria-label="Email"
           >
             <Mail size={24} />
