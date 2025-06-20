@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
           </a>
 
           <a
-            href="/haile-asaye-cv.pdf"
+            href="/haile_asaye_resume.pdf"
             className="px-6 py-3 border border-[#61AFEF]/40 text-[#61AFEF] hover:bg-[#61AFEF]/10 font-medium rounded-xl flex items-center gap-2 transition-all"
           >
             Download CV <Download size={18} />
