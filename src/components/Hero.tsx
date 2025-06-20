@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, Download, Github, Linkedin, Mail } from 'lucide-react';
 import { Typewriter } from 'react-simple-typewriter';
+import ParticlesBackground from './ParticlesBackground';
 
 const Hero: React.FC = () => {
   return (
