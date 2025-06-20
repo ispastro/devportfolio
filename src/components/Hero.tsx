@@ -6,6 +6,7 @@ import ParticlesBackground from './ParticlesBackground';
 const Hero: React.FC = () => {
   return (
     <section className="min-h-screen flex items-center justify-center px-4 md:px-10 lg:px-20 bg-[#1E1E1E] text-[#ABB2BF] font-mono relative overflow-hidden text-center py-24">
+      <ParticlesBackground />
       <div className="absolute inset-0 bg-grid-pattern opacity-5 pointer-events-none"></div>
 
       <div className="z-10 max-w-4xl w-full space-y-8">
